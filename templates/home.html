@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Developer & Data Analyst</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .card {
+        transition: box-shadow 0.3s ease;
+      }
+      .card:hover {
+        box-shadow: 0 0 10px rgb(98, 0, 211);
+      }
+
+      .navbar-brand:hover {
+        background-color: rgb(125, 27, 238);
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    {% load static %}
+    <!-- nav bar start -->
+    <nav class="navbar" style="background-color: white">
+      <div class="container-fluid">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 64 64"
+        >
+          <linearGradient
+            id="BVfSkcHaucNDvMxtSzwJza_uLDrtp8o8zTG_gr1"
+            x1="27"
+            x2="27"
+            y1="11.043"
+            y2="14.639"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#6dc7ff"></stop>
+            <stop offset="1" stop-color="#e6abff"></stop>
+          </linearGradient>
+          <circle
+            cx="27"
+            cy="13"
+            r="2"
+            fill="url(#BVfSkcHaucNDvMxtSzwJza_uLDrtp8o8zTG_gr1)"
+          ></circle>
+          <linearGradient
+            id="BVfSkcHaucNDvMxtSzwJzb_uLDrtp8o8zTG_gr2"
+            x1="37"
+            x2="37"
+            y1="49.128"
+            y2="52.83"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#6dc7ff"></stop>
+            <stop offset="1" stop-color="#e6abff"></stop>
+          </linearGradient>
+          <circle
+            cx="37"
+            cy="51"
+            r="2"
+            fill="url(#BVfSkcHaucNDvMxtSzwJzb_uLDrtp8o8zTG_gr2)"
+          ></circle>
+          <linearGradient
+            id="BVfSkcHaucNDvMxtSzwJzc_uLDrtp8o8zTG_gr3"
+            x1="32"
+            x2="32"
+            y1="6.66"
+            y2="56.873"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#1a6dff"></stop>
+            <stop offset="1" stop-color="#c822ff"></stop>
+          </linearGradient>
+          <path
+            fill="url(#BVfSkcHaucNDvMxtSzwJzc_uLDrtp8o8zTG_gr3)"
+            d="M51,21h-7v-8c0-3.859-3.14-7-7-7H27c-3.86,0-7,3.141-7,7v8h-7c-3.86,0-7,3.141-7,7v8	c0,3.859,3.14,7,7,7h7v8c0,3.859,3.14,7,7,7h10c3.86,0,7-3.141,7-7v-8h7c3.86,0,7-3.141,7-7v-8C58,24.141,54.86,21,51,21z M13,41	c-2.757,0-5-2.243-5-5v-5h7v-2H8v-1c0-0.342,0.035-0.677,0.101-1H23v-2H9.026c0.914-1.207,2.348-2,3.974-2h16v-2h-7v-8	c0-2.757,2.243-5,5-5h10c2.757,0,5,2.243,5,5v15c0,1.654-1.346,3-3,3h-5.489h-3.021H25c-2.757,0-5,2.243-5,5v5H13z M51,41H35v2h7v8	c0,2.757-2.243,5-5,5H27c-2.757,0-5-2.243-5-5V36c0-1.654,1.346-3,3-3h5.489h3.021H39c2.757,0,5-2.243,5-5v-5h7c2.757,0,5,2.243,5,5	v5h-7v2h7v1c0,0.342-0.035,0.677-0.101,1H41v2h13.974C54.061,40.207,52.627,41,51,41z"
+          ></path>
+        </svg>
+        <a
+          class="navbar-brand"
+          href="/contact"
+          style="
+            color: rgb(125, 27, 238);
+            font-size: 20px;
+            border: 3px solid rgb(125, 27, 238);
+            border-radius: 30px;
+            padding: 10px;
+          "
+          >Say Hello</a
+        >
+      </div>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- intro start -->
+    <div class="container mt-5">
+      <h1
+        class="text-center"
+        style="
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        "
+      >
+        Python Developer & Data Analyst
+      </h1>
+      <p
+        class="text-center fs-4"
+        style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+        I analyze data and code proficiently in Python, and I love what I do.
+      </p>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+          <img
+            src="https://mattfarley.ca/img/mf-avatar.svg"
+            class="img-fluid mx-auto d-block mt-3 my-5"
+            alt="Avatar"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <img
+            src="https://mattfarley.ca/img/hero-devices.svg"
+            class="img-fluid mx-auto d-block"
+            alt="Hero Devices"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- intro end -->
+
+    <!-- about start -->
+    <div class="about" style="background-color: rgb(98, 0, 211); height: auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center my-4">
+            <p
+              class="text-white mt-3 fs-2"
+              style="
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                  serif;
+              "
+            >
+              Hi, I'm Prince.
+            </p>
+            <p
+              class="text-white fs-2"
+              style="
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                  serif;
+                text-align: justify;
+              "
+            >
+              As a passionate Python developer and data analyst, I excel in
+              creating impactful code and deriving insightful analyses. My
+              unique blend of creativity and technical expertise allows me to
+              solve complex problems and deliver innovative solutions. Always
+              eager to learn the latest trends, I thrive on new challenges and
+              enjoy collaborating with clients to bring their visions to life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about end -->
+
+    <!-- course details start -->
+    <div
+      class="container d-flex justify-content-center w-75"
+      style="margin-top: -8%"
+    >
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <div class="card mb-3">
+            <img
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='currentColor' class='bi bi-graph-up-arrow' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E"
+              alt="..."
+              width="100"
+              height="100"
+              style="margin: 0 auto; display: block; margin-top: 7%"
+            />
+
+            <div class="card-body text-center">
+              <h5
+                class="card-title"
+                style="
+                  font-size: 30px;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                    sans-serif;
+                "
+              >
+                Data Analyst
+              </h5>
+              <p
+                class="card-text"
+                style="
+                  font-family: Cambria, Cochin, Georgia, Times,
+                    'Times New Roman', serif;
+                  font-size: 20px;
+                  text-align: center;
+                  margin-top: 4%;
+                "
+              >
+                With expertise in Python and advanced analytics, I ensure
+                accurate interpretation and effective decision-making with the
+                help of datasets, insightful visualizations and data-driven
+                solutions.
+              </p>
+              <div
+                style="
+                  text-align: center;
+                  font-family: Cambria, Cochin, Georgia, Times,
+                    'Times New Roman', serif;
+                  font-size: 20px;
+                  margin-top: 2%;
+                "
+              >
+                <p style="color: rgb(98, 0, 211)">Analysis tools:</p>
+                <p>Excel</p>
+                <p>Python</p>
+                <p>MySQL</p>
+                <p>PowerBi</p>
+                <p>Powerpoint</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-3">
+            <img
+              src="data:image/svg+xml,%3Csvg class='svg-inline--fa fa-square-terminal fa-stack-1x has-text-dark' aria-hidden='true' focusable='false' data-prefix='fal' data-icon='square-terminal' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' data-fa-i2svg=''%3E%3Cpath fill='currentColor' d='M384 64c17.7 0 32 14.3 32 32V416c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V96c0-17.7 14.3-32 32-32H384zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM83.9 149.6c-5.8 6.7-5 16.8 1.7 22.6L183.4 256 85.6 339.9c-6.7 5.8-7.5 15.8-1.7 22.6s15.9 7.5 22.6 1.7l112-96c3.5-3 5.6-7.5 5.6-12.1s-2-9.1-5.6-12.1l-112-96c-6.7-5.8-16.8-5-22.6 1.7zM208 352c-8.8 0-16 7.2-16 16s7.2 16 16 16H368c8.8 0 16-7.2 16-16s-7.2-16-16-16H208z'%3E%3C/path%3E%3C/svg%3E"
+              alt="SVG image"
+              width="100"
+              height="100"
+              style="margin: 0 auto; display: block; margin-top: 7.5%"
+            />
+            <div class="card-body text-center">
+              <h5
+                class="card-title"
+                style="
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                    sans-serif;
+                  font-size: 30px;
+                "
+              >
+                Python Developer
+              </h5>
+              <p
+                class="card-text"
+                style="
+                  font-family: Cambria, Cochin, Georgia, Times,
+                    'Times New Roman', serif;
+                  font-size: 20px;
+                  text-align: center;
+                  margin-top: 5%;
+                "
+              >
+                I specialize in developing softwares and websites, efficient
+                database connections and cutting-edge frameworks for seamless
+                user experiences.
+              </p>
+              <div
+                style="
+                  text-align: center;
+                  font-family: Cambria, Cochin, Georgia, Times,
+                    'Times New Roman', serif;
+                  font-size: 20px;
+                  margin-top: 2%;
+                "
+              >
+                <p style="color: rgb(98, 0, 211)">Dev tools:</p>
+                <p>Python</p>
+                <p>Django</p>
+                <p>MySql</p>
+                <p>Github</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course details end -->
+
+    <!-- recent work start -->
+    <div class="container mt-5">
+      <h1
+        class="text-center"
+        style="
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          margin-top: 8%;
+        "
+      >
+        My Recent Work
+      </h1>
+      <p
+        class="text-center fs-4"
+        style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+        Here are few projects I've worked on.
+      </p>
+    </div>
+    <!-- recent work end -->
+
+    <!-- recent project start -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <a href="https://pharmahealthcare.pythonanywhere.com/">
+            <div
+              class="card mb-3 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="https://media.istockphoto.com/id/1419507383/vector/cartoon-icon-with-red-first-aid-on-white-background-for-medical-design-flat-vector.jpg?s=612x612&w=0&k=20&c=WQmVvRI9bNg4u2KZXC5SwZVeit2J10DnPDbXwBc3r6o="
+                class="card-img-top w-100"
+                alt="..."
+                style="max-width: 200px"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://smartattend.pythonanywhere.com">
+            <div
+              class="card mb-3 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="https://media.istockphoto.com/id/1183297669/vector/four-people-vector-icon-illustration.jpg?s=612x612&w=0&k=20&c=CsOVoH4rbn1er4RgkSN20ywfZkIcgMAnNHPv-Rf9EkQ="
+                class="card-img-top w-100"
+                alt="..."
+                style="max-width: 200px"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://online.fliphtml5.com/acotx/khfh/">
+            <div
+              class="card mb-3 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="https://cdn-icons-png.freepik.com/512/6607/6607452.png"
+                class="card-img-top w-100"
+                alt="..."
+                style="max-width: 200px"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- recent project end -->
+
+    <!-- certification start -->
+    <div class="container mt-5">
+      <h1
+        class="text-center"
+        style="
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          margin-top: 8%;
+        "
+      >
+        Certifications
+      </h1>
+      <p
+        class="text-center fs-4"
+        style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+      Check out some certifications I've proudly earned.
+      </p>
+    </div>
+    
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4">
+            <div
+              class="card mb-3 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="{% static 'Python.jpg' %}"
+                class="card-img-top w-100"
+                alt="..."
+                style="max-width: 300px"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://smartattend.pythonanywhere.com">
+            <div
+              class="card mb-3 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="/static/Data analysis.jpg"
+                class="card-img-top w-100"
+                alt="..."
+                style="max-width: 300px"
+              />
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="https://online.fliphtml5.com/acotx/khfh/">
+            <div
+              class="card mb-3 d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="/static/Excel.jpg"
+                class="card-img-top w-100"
+                alt="..."
+                style="max-width: 300px"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- certification end -->
+    
+    <!-- testimonals start -->
+    <div class="container mt-5">
+      <h1
+        class="text-center"
+        style="
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          margin-top: 8%;
+        "
+      >
+        Testimonials
+      </h1>
+      <p
+        class="text-center fs-4"
+        style="
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+        People I've worked with have said some nice things....
+      </p>
+    </div>
+    <!-- testimonals end -->
+
+    <!-- slide start -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="carousel-content">
+                  <p
+                    style="
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    "
+                    class="my-5 text-center fs-3"
+                  >
+                    "Prince was a real pleasure to work with and we look forward
+                    to working with him again. He’s definitely the kind of
+                    designer you can trust with a project from start to finish.”
+                  </p>
+                  <p
+                    style="
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                      font-weight: bold;
+                    "
+                    class="text-center font-weight-bold fs-3"
+                  >
+                    Sarju Sejpal
+                  </p>
+                  <p
+                    style="
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    "
+                    class="text-center mb-4 fs-3"
+                  >
+                    Frontend Dev | Dajiraj infotech
+                  </p>
+                </div>
+                <div class="carousel-caption d-none">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="carousel-content">
+                  <p class="my-5 text-center fs-3">
+                    "Working alongside Prince has been an exceptional
+                    experience, and I couldn't be more pleased with the results
+                    He brings a remarkable combination of technical prowess,
+                    creativity, and dedication to every project, making his
+                    contributions invaluable."
+                  </p>
+                  <p
+                    style="
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                      font-weight: bold;
+                    "
+                    class="text-center font-weight-bold fs-3"
+                  >
+                    Rahul Sharma
+                  </p>
+                  <p
+                    style="
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    "
+                    class="text-center mb-4 fs-3"
+                  >
+                    Sr. Python Dev | Justenable
+                  </p>
+                </div>
+                <div class="carousel-caption d-none">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slide end -->
+
+    <!-- footer start -->
+    <div
+      style="background-color: rgb(98, 0, 211); height: auto; margin-top: 12%"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <svg
+              style="margin-top: 12%"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0,0,256,256"
+            >
+              <defs>
+                <linearGradient
+                  x1="27"
+                  y1="11.043"
+                  x2="27"
+                  y2="14.639"
+                  gradientUnits="userSpaceOnUse"
+                  id="color-1_uLDrtp8o8zTG_gr1"
+                >
+                  <stop offset="0" stop-color="#ffffff"></stop>
+                  <stop offset="1" stop-color="#ffffff"></stop>
+                </linearGradient>
+                <linearGradient
+                  x1="37"
+                  y1="49.128"
+                  x2="37"
+                  y2="52.83"
+                  gradientUnits="userSpaceOnUse"
+                  id="color-2_uLDrtp8o8zTG_gr2"
+                >
+                  <stop offset="0" stop-color="#ffffff"></stop>
+                  <stop offset="1" stop-color="#ffffff"></stop>
+                </linearGradient>
+                <linearGradient
+                  x1="32"
+                  y1="6.66"
+                  x2="32"
+                  y2="56.873"
+                  gradientUnits="userSpaceOnUse"
+                  id="color-3_uLDrtp8o8zTG_gr3"
+                >
+                  <stop offset="0" stop-color="#fffbfb"></stop>
+                  <stop offset="1" stop-color="#ffffff"></stop>
+                </linearGradient>
+              </defs>
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(4,4)">
+                  <circle
+                    cx="27"
+                    cy="13"
+                    r="2"
+                    fill="url(#color-1_uLDrtp8o8zTG_gr1)"
+                  ></circle>
+                  <circle
+                    cx="37"
+                    cy="51"
+                    r="2"
+                    fill="url(#color-2_uLDrtp8o8zTG_gr2)"
+                  ></circle>
+                  <path
+                    d="M51,21h-7v-8c0,-3.859 -3.14,-7 -7,-7h-10c-3.86,0 -7,3.141 -7,7v8h-7c-3.86,0 -7,3.141 -7,7v8c0,3.859 3.14,7 7,7h7v8c0,3.859 3.14,7 7,7h10c3.86,0 7,-3.141 7,-7v-8h7c3.86,0 7,-3.141 7,-7v-8c0,-3.859 -3.14,-7 -7,-7zM13,41c-2.757,0 -5,-2.243 -5,-5v-5h7v-2h-7v-1c0,-0.342 0.035,-0.677 0.101,-1h14.899v-2h-13.974c0.914,-1.207 2.348,-2 3.974,-2h16v-2h-7v-8c0,-2.757 2.243,-5 5,-5h10c2.757,0 5,2.243 5,5v15c0,1.654 -1.346,3 -3,3h-5.489h-3.021h-5.49c-2.757,0 -5,2.243 -5,5v5zM51,41h-16v2h7v8c0,2.757 -2.243,5 -5,5h-10c-2.757,0 -5,-2.243 -5,-5v-15c0,-1.654 1.346,-3 3,-3h5.489h3.021h5.49c2.757,0 5,-2.243 5,-5v-5h7c2.757,0 5,2.243 5,5v5h-7v2h7v1c0,0.342 -0.035,0.677 -0.101,1h-14.899v2h13.974c-0.913,1.207 -2.347,2 -3.974,2z"
+                    fill="url(#color-3_uLDrtp8o8zTG_gr3)"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <p
+              class="text-white fs-2"
+              style="
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
+                  serif;
+              "
+            >
+              Living, learning, & leveling up one day at a time.
+            </p>
+            <div class="my-5">
+              <a href="https://twitter.com/princesoni37685"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-twitter"
+                  viewBox="0 0 16 16"
+                  style="color: white; margin-right: 5%"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"
+                  /></svg
+              ></a>
+              <a href="https://github.com/PrinceZinzuvadiya"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                  style="color: white; margin-right: 5%"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+              ></a>
+              <a href="https://www.facebook.com/prince.zinzuvadiya.7/"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                  style="color: white; margin-right: 5%"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  /></svg
+              ></a>
+              <a href="https://www.linkedin.com/in/prince-zinzuvadiya-1b35292b8"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                  style="color: white; margin-right: 5%"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                  /></svg
+              ></a>
+              <a href="mailto:pazinzuvadiya@gmail.com"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                  class="bi bi-envelope"
+                  viewBox="0 0 16 16"
+                  style="color: white; margin-right: 5%"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
+  </body>
+</html>
